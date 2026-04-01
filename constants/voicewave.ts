@@ -1,0 +1,6 @@
+export const VOICEWAVE_BARS = 12;
+export const VOICEWAVE_HEIGHT_MIN = 20;
+export const VOICEWAVE_HEIGHT_RANGE = 80;
+export const VOICEWAVE_DELAY_STEP = 0.1;
+export const VOICEWAVE_DURATION_MIN = 0.8;
+export const VOICEWAVE_DURATION_RANGE = 1;

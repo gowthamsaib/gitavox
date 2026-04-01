@@ -1,5 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="8" fill="#0A0A0F"/>
-  <circle cx="16" cy="16" r="8" fill="none" stroke="#4DFFD2" stroke-width="2"/>
-  <circle cx="16" cy="16" r="3" fill="#4DFFD2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="12" fill="url(#g)"/>
+  <!-- Voice / sound wave bars -->
+  <path d="M22 40 L22 24 M30 40 L30 16 M38 40 L38 24" stroke="white" stroke-width="3" stroke-linecap="round"/>
 </svg>

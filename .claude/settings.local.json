@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell.exe -Command \"winget install --id GitHub.cli -e --accept-source-agreements --accept-package-agreements\")",
+      "Bash(powershell.exe -Command \"winget install --id OpenJS.NodeJS.LTS -e --accept-source-agreements --accept-package-agreements\")",
+      "Bash(export PATH=\"$PATH:/c/Program Files/GitHub CLI:/c/Program Files/nodejs\")",
+      "Bash(gh --version)",
+      "Bash(npm --version)",
+      "Bash(gh auth:*)",
+      "Bash(gh repo:*)",
+      "Bash(npm install:*)",
+      "Bash(vercel --version)",
+      "Bash(export PATH=\"$PATH:/c/Program Files/GitHub CLI:/c/Program Files/nodejs:/c/Users/bgowt/AppData/Roaming/npm\")",
+      "Bash(vercel whoami:*)",
+      "Bash(vercel --yes --prod)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"Update to TypeScript rewrite with new components and pages:*)",
+      "Bash(git push:*)"
+    ]
+  }
+}

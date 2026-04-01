@@ -2,16 +2,89 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Gitavox – AI Voice & Text Agents for B2B Companies. Automate customer conversations at scale." />
-    <title>Gitavox – AI Voice & Text Agents</title>
+    <meta name="description" content="GitaVox – voice AI agents and chatbots for business. Automate inbound calls, orchestrate AI assistants, and scale human-centric automation for restaurants, gyms, real estate, and more." />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#030712" />
+    <meta name="author" content="GitaVox Technologies" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="GitaVox | The Voice of AI" />
+    <meta property="og:description" content="GitaVox – voice AI agents and chatbots for business. Automate inbound calls, orchestrate AI assistants, and scale human-centric automation for restaurants, gyms, real estate, and more." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/" />
+    <meta property="og:site_name" content="GitaVox" />
+    <meta property="og:image" content="/linkedin-cover.png" />
+    <meta property="og:image:width" content="1584" />
+    <meta property="og:image:height" content="396" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GitaVox | The Voice of AI" />
+    <meta name="twitter:description" content="GitaVox – voice AI agents and chatbots for business. Automate inbound calls, orchestrate AI assistants, and scale human-centric automation." />
+    <meta name="twitter:image" content="/linkedin-cover.png" />
+    <link rel="canonical" href="/" />
+    <title>GitaVox | The Voice of AI</title>
+    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="favicon.png" sizes="180x180" />
+    <!-- Must match constants/theme THEME_KEY -->
+    <script>
+      (function () {
+        const stored = localStorage.getItem('gitavox-theme');
+        if (stored === 'dark') document.documentElement.classList.add('dark');
+        else document.documentElement.classList.remove('dark');
+      })();
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = { darkMode: 'class' };
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
-  </head>
+    <link rel="dns-prefetch" href="https://formspree.io" />
+    <link rel="dns-prefetch" href="https://calendly.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@^9.5.0",
+    "three": "https://esm.sh/three@^0.182.0",
+    "@react-three/drei": "https://esm.sh/@react-three/drei@^10.7.7"
+  }
+}
+</script>
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "GitaVox",
+      "url": "/",
+      "logo": "/favicon.png",
+      "description": "Voice AI agents and chatbots for business automation.",
+      "sameAs": [
+        "https://linkedin.com/company/gitavox",
+        "https://instagram.com/gitavoxai"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "admin@gitavox.tech",
+        "contactType": "customer service"
+      }
+    }
+    </script>
+</head>
   <body>
+    <noscript>
+      <div style="padding:2rem;text-align:center;">
+        <h1>GitaVox</h1>
+        <p>Voice AI and chatbots for business. Please enable JavaScript to use this site.</p>
+      </div>
+    </noscript>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+  <script type="module" src="/index.tsx"></script>
+</body>
 </html>
