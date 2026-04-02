@@ -93,7 +93,7 @@ export const FAQSection: React.FC = () => {
           <p className="text-slate-600 dark:text-slate-400 mb-6">
             Have more questions?{' '}
             <a
-              href="/services"
+              href="/contact"
               className="text-blue-600 dark:text-blue-400 hover:underline font-semibold"
             >
               Schedule a discovery call

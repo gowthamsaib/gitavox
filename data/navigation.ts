@@ -52,7 +52,6 @@ export const navigation = {
     { name: 'Home', href: '/' },
     { name: 'Products', href: '/products', hasDropdown: true },
     { name: 'Solutions', href: '/solutions', hasDropdown: true },
-    { name: 'Services', href: '/services' },
     { name: 'Contact', href: '/contact' },
   ],
 } as const;

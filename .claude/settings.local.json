@@ -15,7 +15,17 @@
       "Bash(vercel --yes --prod)",
       "Bash(git add:*)",
       "Bash(git commit -m \"Update to TypeScript rewrite with new components and pages:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(vercel ls:*)",
+      "Bash(vercel --prod)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(export PATH=\"$PATH:/c/Program Files/nodejs\")",
+      "WebFetch(domain:www.retellai.com)",
+      "WebFetch(domain:docs.retellai.com)",
+      "WebSearch",
+      "Bash(git commit -m \"Fix products page: remove duplicate header, rename products, add booking dialog, fix integrations carousel:*)",
+      "Bash(git commit:*)",
+      "Bash(npm run:*)"
     ]
   }
 }

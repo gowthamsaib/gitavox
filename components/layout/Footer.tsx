@@ -8,13 +8,12 @@ const footerLinks = {
     { label: 'Home', href: '/' },
     { label: 'Products', href: '/products' },
     { label: 'Solutions', href: '/solutions' },
-    { label: 'Services', href: '/services' },
     { label: 'Contact', href: '/contact' },
   ],
   products: [
-    { label: 'VoxFlow', href: '/products#voxflow' },
-    { label: 'Conversa', href: '/products#conversa' },
-    { label: 'Custom AI Agents', href: '/products#custom-ai-agents' },
+    { label: 'AI Voice Agents', href: '/products#voice-agents' },
+    { label: 'AI Text Agents', href: '/products#text-agents' },
+    { label: 'Custom AI Agents', href: '/products#custom-agents' },
   ],
 };
 
