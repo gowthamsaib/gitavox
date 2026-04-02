@@ -113,6 +113,13 @@ export const Nav: React.FC = () => {
               </div>
 
               <Link
+                to="/pricing"
+                className={`text-sm font-medium transition-colors uppercase tracking-wider ${isActive('/pricing') ? 'text-blue-500' : 'text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white'}`}
+              >
+                Pricing
+              </Link>
+
+              <Link
                 to="/services"
                 className={`text-sm font-medium transition-colors uppercase tracking-wider ${isActive('/services') ? 'text-blue-500' : 'text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white'}`}
               >
@@ -165,6 +172,7 @@ export const Nav: React.FC = () => {
           <Link to="/" onClick={() => setIsMenuOpen(false)} className="text-2xl font-outfit font-bold">Home</Link>
           <Link to="/products" onClick={() => setIsMenuOpen(false)} className="text-2xl font-outfit font-bold">Products</Link>
           <Link to="/solutions" onClick={() => setIsMenuOpen(false)} className="text-2xl font-outfit font-bold">Solutions</Link>
+          <Link to="/pricing" onClick={() => setIsMenuOpen(false)} className="text-2xl font-outfit font-bold">Pricing</Link>
           <Link to="/services" onClick={() => setIsMenuOpen(false)} className="text-2xl font-outfit font-bold">Services</Link>
           <Link to="/contact" onClick={() => setIsMenuOpen(false)} className="text-2xl font-outfit font-bold">Contact</Link>
 

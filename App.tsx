@@ -10,6 +10,7 @@ import ServicesPage from './pages/ServicesPage';
 import IntegrationsPage from './pages/IntegrationsPage';
 import SolutionsPage from './pages/SolutionsPage';
 import ContactPage from './pages/ContactPage';
+import PricingPage from './pages/PricingPage';
 import PrivacyPage from './pages/PrivacyPage';
 import TermsPage from './pages/TermsPage';
 
@@ -34,6 +35,7 @@ const App: React.FC = () => {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/integrations" element={<IntegrationsPage />} />
           <Route path="/roadmap" element={<RoadmapPage />} />
+          <Route path="/pricing" element={<PricingPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/terms" element={<TermsPage />} />
