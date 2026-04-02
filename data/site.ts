@@ -1,9 +1,9 @@
 export const hero = {
-  badge: 'AI Voice & Text Agents for B2B',
+  badge: 'Replace your IVR & Reclaim your revenue',
   headline: 'Your Business Deserves Agents',
   headlineHighlight: 'That Never Sleep',
   subline:
-    'Replace your IVR. Reclaim your revenue. GitaVox deploys AI voice and text agents that handle calls, qualify leads, and book appointments — 24/7, without adding headcount.',
+    'GitaVox deploys AI voice and text agents that handle calls, qualify leads, and book appointments — 24/7, without adding headcount.',
   ctaPrimary: 'Book a Free Demo',
   ctaSecondary: 'See How It Works',
   voiceEngineStatus: 'VOICE_ENGINE_STATUS: OPERATIONAL',
