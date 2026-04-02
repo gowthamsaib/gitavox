@@ -1,19 +1,19 @@
 export const navigation = {
   products: [
     {
-      name: 'VoxFlow',
-      href: '/products#voxflow',
-      description: 'Automated inbound & outbound voice calls with natural AI conversations',
+      name: 'AI Voice Agents',
+      href: '/products#voice-agents',
+      description: 'Inbound & outbound phone agents with sub-600ms response and natural conversation',
     },
     {
-      name: 'Conversa',
-      href: '/products#conversa',
-      description: 'No-code AI chatbot builder for web, WhatsApp, and SMS',
+      name: 'AI Text Agents',
+      href: '/products#text-agents',
+      description: 'Always-on chat agents for web, WhatsApp, and SMS — 24/7 lead capture and support',
     },
     {
       name: 'Custom AI Agents',
-      href: '/products#custom-ai-agents',
-      description: 'Fully bespoke AI agents trained on your workflows and data',
+      href: '/products#custom-agents',
+      description: 'Fully bespoke agents built around your industry, workflows, and data',
     },
   ],
   solutions: [
