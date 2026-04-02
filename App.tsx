@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import ThreeScene from './components/ThreeScene';
 import { Nav } from './components/layout/Nav';
 import { Footer } from './components/layout/Footer';
@@ -21,6 +22,7 @@ const ScrollToTop: React.FC = () => {
 
 const App: React.FC = () => {
   return (
+    <HelmetProvider>
     <BrowserRouter>
       <div className="relative min-h-screen text-slate-900 selection:bg-blue-500/30 dark:text-slate-100">
         <ThreeScene />
@@ -41,6 +43,7 @@ const App: React.FC = () => {
         <Footer />
       </div>
     </BrowserRouter>
+    </HelmetProvider>
   );
 };
 

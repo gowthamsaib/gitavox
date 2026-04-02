@@ -1,4 +1,5 @@
 import React from 'react';
+import { SEO } from '../components/SEO';
 
 const Section: React.FC<{ title: string; children: React.ReactNode }> = ({ title, children }) => (
   <div className="mb-10">
@@ -9,6 +10,11 @@ const Section: React.FC<{ title: string; children: React.ReactNode }> = ({ title
 
 export const PrivacyPage: React.FC = () => (
   <main id="main-content">
+    <SEO
+      title="Privacy Policy | GitaVox"
+      description="Read the GitaVox Privacy Policy. Learn how we collect, use, and protect your data when you use our AI voice and text agent platform."
+      path="/privacy"
+    />
     <section className="pt-40 pb-24 px-6">
       <div className="max-w-3xl mx-auto">
         <div className="mb-12">

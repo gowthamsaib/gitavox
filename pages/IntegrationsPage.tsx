@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { integrations, categories, IntegrationCategory } from '../data/integrations';
+import { SEO } from '../components/SEO';
 import { ArrowRight, CheckCircle, Clock } from 'lucide-react';
 
 export const IntegrationsPage: React.FC = () => {
@@ -13,6 +14,11 @@ export const IntegrationsPage: React.FC = () => {
 
   return (
     <main id="main-content">
+      <SEO
+        title="Integrations | GitaVox"
+        description="Connect GitaVox with Twilio, HubSpot, Salesforce, Google Calendar, n8n, Zapier, Make, Slack, and more. Native integrations for voice, CRM, and automation."
+        path="/integrations"
+      />
       {/* Hero Section */}
       <section className="pt-40 pb-20 px-6">
         <div className="max-w-5xl mx-auto text-center">

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronRight, Utensils, Dumbbell, HeartPulse, Building2, ShoppingBag, Plane, CheckCircle } from 'lucide-react';
+import { SEO } from '../components/SEO';
 import { CALENDLY_DISCOVERY_URL } from '../config/calendly';
 
 const solutions = [
@@ -75,6 +76,11 @@ const solutions = [
 export const SolutionsPage: React.FC = () => {
   return (
     <main id="main-content">
+      <SEO
+        title="Industry Solutions | GitaVox"
+        description="AI voice and text agents for restaurants, healthcare, fitness, real estate, retail, and travel. GitaVox automates calls, bookings, and customer service 24/7."
+        path="/solutions"
+      />
       {/* Hero */}
       <section className="pt-40 pb-20 px-6">
         <div className="max-w-4xl mx-auto text-center">

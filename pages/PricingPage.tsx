@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Check, ArrowRight } from 'lucide-react';
+import { SEO } from '../components/SEO';
 
 const CALENDLY_URL = 'https://calendly.com/admin-gitavox/30min';
 
@@ -16,6 +17,11 @@ const features = [
 export const PricingPage: React.FC = () => {
   return (
     <main id="main-content">
+      <SEO
+        title="Pricing | GitaVox Founder Offer — $800/mo"
+        description="Simple, transparent pricing. One custom AI agent for your business — $800/month, 3-month minimum. Only 5 founder spots available this month."
+        path="/pricing"
+      />
       {/* Page Header */}
       <section className="pt-40 pb-16 px-6">
         <div className="max-w-4xl mx-auto text-center">

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Clock, Linkedin, CalendarPlus, CheckCircle, AlertCircle } from 'lucide-react';
+import { SEO } from '../components/SEO';
 import { CALENDLY_DISCOVERY_URL } from '../config/calendly';
 
 const FORM_EMAIL = 'admin@gitavox.tech';
@@ -51,6 +52,11 @@ export const ContactPage: React.FC = () => {
 
   return (
     <main id="main-content">
+      <SEO
+        title="Contact GitaVox | Book a Free Demo"
+        description="Get in touch with the GitaVox team. Book a free 30-minute demo, ask about our AI voice and text agents, or discuss a custom solution for your business."
+        path="/contact"
+      />
       {/* Hero */}
       <section className="pt-40 pb-16 px-6">
         <div className="max-w-4xl mx-auto text-center">

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { SEO } from '../components/SEO';
 import { HeroSection } from '../components/sections/HeroSection';
 import { VoxFlowSection } from '../components/sections/VoxFlowSection';
 import { ComparisonSection } from '../components/sections/ComparisonSection';
@@ -19,6 +20,11 @@ const trustPoints = [
 export const HomePage: React.FC = () => {
   return (
     <main id="main-content">
+      <SEO
+        title="GitaVox | AI Voice & Text Agents That Never Sleep"
+        description="Replace your IVR and reclaim your revenue. GitaVox deploys AI voice and text agents that handle calls, qualify leads, and book appointments — 24/7, without adding headcount."
+        path="/"
+      />
       <HeroSection />
       <VoxFlowSection />
       <ComparisonSection />

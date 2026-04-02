@@ -1,4 +1,5 @@
 import React from 'react';
+import { SEO } from '../components/SEO';
 
 const Section: React.FC<{ title: string; children: React.ReactNode }> = ({ title, children }) => (
   <div className="mb-10">
@@ -9,6 +10,11 @@ const Section: React.FC<{ title: string; children: React.ReactNode }> = ({ title
 
 export const TermsPage: React.FC = () => (
   <main id="main-content">
+    <SEO
+      title="Terms of Service | GitaVox"
+      description="Read the GitaVox Terms of Service. Understand your rights and responsibilities when using our AI voice and text agent services."
+      path="/terms"
+    />
     <section className="pt-40 pb-24 px-6">
       <div className="max-w-3xl mx-auto">
         <div className="mb-12">

@@ -1,10 +1,16 @@
 import React from 'react';
 import { Sparkles } from 'lucide-react';
+import { SEO } from '../components/SEO';
 import { RoadmapSection } from '../components/sections/RoadmapSection';
 
 export const RoadmapPage: React.FC = () => {
   return (
     <main id="main-content">
+      <SEO
+        title="Product Roadmap | GitaVox"
+        description="See what's coming next at GitaVox — multimodal AI agents, real-time translation, emotion AI, and enterprise-scale deployments. Q1 2026 and beyond."
+        path="/roadmap"
+      />
       {/* Page Header with Enhanced Design */}
       <section className="pt-40 pb-20 px-6 bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-transparent">
         <div className="max-w-5xl mx-auto text-center">

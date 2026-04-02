@@ -1,10 +1,16 @@
 import React from 'react';
+import { SEO } from '../components/SEO';
 import { ProductsSection } from '../components/sections/ProductsSection';
 import { IntegrationsSection } from '../components/sections/IntegrationsSection';
 
 export const ProductsPage: React.FC = () => {
   return (
     <main id="main-content">
+      <SEO
+        title="AI Voice & Text Agent Products | GitaVox"
+        description="Explore GitaVox's three AI agent products: AI Voice Agents for phone calls, AI Text Agents for chat and SMS, and Custom AI Agents built around your business workflows."
+        path="/products"
+      />
       {/* Products Section — includes its own "Flagship Products" heading */}
       <div className="pt-24">
         <ProductsSection />
