@@ -61,16 +61,14 @@ export const IntegrationsSection: React.FC = () => {
             {[...topRowIntegrations, ...topRowIntegrations].map((integration, index) => {
               const Icon = integration.icon;
               return (
-                <div
-                  key={`${integration.name}-${index}`}
-                  className="flex-shrink-0 group"
-                >
-                  <div className="flex items-center gap-3 px-6 py-4 rounded-2xl bg-white/50 dark:bg-slate-800/50 border border-slate-200/50 dark:border-white/10 hover:border-blue-500/50 dark:hover:border-blue-400/50 transition-all">
+                <div key={`${integration.name}-${index}`} className="flex-shrink-0 group">
+                  <div className="flex items-center gap-3 px-6 py-4 rounded-2xl bg-white/50 dark:bg-slate-800/50 border border-slate-200/50 dark:border-white/10 hover:border-blue-500/40 hover:bg-white dark:hover:bg-slate-800 hover:shadow-md transition-all duration-300 cursor-default">
                     <Icon
-                      size={32}
-                      className="text-slate-600 dark:text-slate-400 opacity-70 group-hover:opacity-100 transition-opacity"
+                      size={28}
+                      className="opacity-50 group-hover:opacity-100 transition-all duration-300"
+                      style={{ color: integration.color }}
                     />
-                    <span className="text-sm font-semibold text-slate-700 dark:text-slate-300 whitespace-nowrap opacity-70 group-hover:opacity-100 transition-opacity">
+                    <span className="text-sm font-semibold text-slate-500 dark:text-slate-400 whitespace-nowrap opacity-60 group-hover:opacity-100 group-hover:text-slate-900 dark:group-hover:text-white transition-all duration-300">
                       {integration.name}
                     </span>
                   </div>
@@ -84,16 +82,14 @@ export const IntegrationsSection: React.FC = () => {
             {[...bottomRowIntegrations, ...bottomRowIntegrations].map((integration, index) => {
               const Icon = integration.icon;
               return (
-                <div
-                  key={`${integration.name}-${index}-2`}
-                  className="flex-shrink-0 group"
-                >
-                  <div className="flex items-center gap-3 px-6 py-4 rounded-2xl bg-white/50 dark:bg-slate-800/50 border border-slate-200/50 dark:border-white/10 hover:border-blue-500/50 dark:hover:border-blue-400/50 transition-all">
+                <div key={`${integration.name}-${index}-2`} className="flex-shrink-0 group">
+                  <div className="flex items-center gap-3 px-6 py-4 rounded-2xl bg-white/50 dark:bg-slate-800/50 border border-slate-200/50 dark:border-white/10 hover:border-blue-500/40 hover:bg-white dark:hover:bg-slate-800 hover:shadow-md transition-all duration-300 cursor-default">
                     <Icon
-                      size={32}
-                      className="text-slate-600 dark:text-slate-400 opacity-70 group-hover:opacity-100 transition-opacity"
+                      size={28}
+                      className="opacity-50 group-hover:opacity-100 transition-all duration-300"
+                      style={{ color: integration.color }}
                     />
-                    <span className="text-sm font-semibold text-slate-700 dark:text-slate-300 whitespace-nowrap opacity-70 group-hover:opacity-100 transition-opacity">
+                    <span className="text-sm font-semibold text-slate-500 dark:text-slate-400 whitespace-nowrap opacity-60 group-hover:opacity-100 group-hover:text-slate-900 dark:group-hover:text-white transition-all duration-300">
                       {integration.name}
                     </span>
                   </div>

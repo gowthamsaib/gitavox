@@ -58,9 +58,9 @@ export const footer = {
   tagline:
     'GitaVox builds AI voice and text agents that work 24/7 — so your team can focus on what humans do best.',
   labs: [
-    { label: 'VoxFlow', href: '/products#voxflow' },
-    { label: 'Conversa', href: '/products#conversa' },
-    { label: 'Custom AI', href: '/products#custom-ai-agents' },
+    { label: 'AI Voice Agents', href: '/products#voice-agents' },
+    { label: 'AI Text Agents', href: '/products#text-agents' },
+    { label: 'Custom AI Agents', href: '/products#custom-agents' },
   ],
   contact: [
     { label: 'LinkedIn', href: 'https://www.linkedin.com/company/gitavox-inc', external: true },
