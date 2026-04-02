@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronRight, Phone, MessageSquare, Bot, X, CalendarDays } from 'lucide-react';
+import { ChevronRight, Phone, MessageSquare, Cpu, X, CalendarDays } from 'lucide-react';
 import { MAX_WIDTH_CONTAINER } from '../../config/app';
 import { products } from '../../data/products';
 import { productsSection } from '../../data/site';
@@ -9,7 +9,7 @@ const CALENDLY_URL = 'https://calendly.com/admin-gitavox/30min';
 const productIcons: Record<string, React.ReactNode> = {
   'voice-agents': <Phone size={56} strokeWidth={1.5} />,
   'text-agents': <MessageSquare size={56} strokeWidth={1.5} />,
-  'custom-agents': <Bot size={56} strokeWidth={1.5} />,
+  'custom-agents': <Cpu size={56} strokeWidth={1.5} />,
 };
 
 const productGradients: Record<string, string> = {
