@@ -9,7 +9,6 @@ const features = [
   '1 AI voice or text agent, custom-built for your business',
   'Up to 1,000 conversation minutes/month',
   'CRM or calendar integration included',
-  'Live in 48 hours',
   'Weekly performance report',
   'Direct access to founding team',
 ];

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { SEO } from '../components/SEO';
 import { HeroSection } from '../components/sections/HeroSection';
-import { VoxFlowSection } from '../components/sections/VoxFlowSection';
+import { DemoSection } from '../components/sections/DemoSection';
 import { ComparisonSection } from '../components/sections/ComparisonSection';
 import { ChannelsSection } from '../components/sections/ChannelsSection';
 import { IntegrationsSection } from '../components/sections/IntegrationsSection';
@@ -26,7 +26,7 @@ export const HomePage: React.FC = () => {
         path="/"
       />
       <HeroSection />
-      <VoxFlowSection />
+      <DemoSection />
       <ComparisonSection />
 
       {/* Trust bar */}

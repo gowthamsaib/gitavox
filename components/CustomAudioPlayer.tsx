@@ -5,6 +5,8 @@ import VoiceWave from './VoiceWave';
 interface CustomAudioPlayerProps {
   src: string;
   autoplay?: boolean;
+  onTimeUpdate?: (time: number) => void;
+  onEnded?: () => void;
 }
 
 const formatTime = (seconds: number): string => {
@@ -14,7 +16,7 @@ const formatTime = (seconds: number): string => {
   return `${mins}:${secs.toString().padStart(2, '0')}`;
 };
 
-export const CustomAudioPlayer: React.FC<CustomAudioPlayerProps> = ({ src, autoplay = false }) => {
+export const CustomAudioPlayer: React.FC<CustomAudioPlayerProps> = ({ src, autoplay = false, onTimeUpdate, onEnded }) => {
   const audioRef = useRef<HTMLAudioElement>(null);
   const progressRef = useRef<HTMLDivElement>(null);
   const hasAttemptedAutoplay = useRef(false);
@@ -29,12 +31,18 @@ export const CustomAudioPlayer: React.FC<CustomAudioPlayerProps> = ({ src, autop
     const audio = audioRef.current;
     if (!audio) return;
 
-    const handleTimeUpdate = () => setCurrentTime(audio.currentTime);
+    const handleTimeUpdate = () => {
+      setCurrentTime(audio.currentTime);
+      onTimeUpdate?.(audio.currentTime);
+    };
     const handleLoadedMetadata = () => {
       setDuration(audio.duration);
       setIsLoading(false);
     };
-    const handleEnded = () => setIsPlaying(false);
+    const handleEnded = () => {
+      setIsPlaying(false);
+      onEnded?.();
+    };
     const handleError = () => {
       setHasError(true);
       setIsLoading(false);

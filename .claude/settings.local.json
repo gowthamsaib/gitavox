@@ -25,7 +25,13 @@
       "WebSearch",
       "Bash(git commit -m \"Fix products page: remove duplicate header, rename products, add booking dialog, fix integrations carousel:*)",
       "Bash(git commit:*)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(python -c \"import whisper; print\\(''whisper available''\\)\")",
+      "Bash(node -e \"require\\(''fs''\\).statSync\\(''C:/Users/bgowt/OneDrive/Desktop/Claude/gitavox/public/qna-gitavox-demo.wav''\\); console.log\\(''file exists''\\)\")",
+      "Bash(npx --yes @xenova/transformers)",
+      "Bash(pip3 install:*)",
+      "Bash(whisper --version)",
+      "Bash(vercel domains:*)"
     ]
   }
 }

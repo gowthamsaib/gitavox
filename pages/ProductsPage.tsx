@@ -1,6 +1,7 @@
 import React from 'react';
 import { SEO } from '../components/SEO';
 import { ProductsSection } from '../components/sections/ProductsSection';
+import { DemoSection } from '../components/sections/DemoSection';
 import { IntegrationsSection } from '../components/sections/IntegrationsSection';
 
 export const ProductsPage: React.FC = () => {
@@ -15,6 +16,9 @@ export const ProductsPage: React.FC = () => {
       <div className="pt-24">
         <ProductsSection />
       </div>
+
+      {/* Live demo with transcript */}
+      <DemoSection />
 
       {/* Integrations with animated logos */}
       <IntegrationsSection />
