@@ -30,8 +30,8 @@
     <script>
       (function () {
         const stored = localStorage.getItem('gitavox-theme');
-        if (stored === 'dark') document.documentElement.classList.add('dark');
-        else document.documentElement.classList.remove('dark');
+        if (stored === 'light') document.documentElement.classList.remove('dark');
+        else document.documentElement.classList.add('dark');
       })();
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
