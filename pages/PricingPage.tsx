@@ -2,8 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Check, ArrowRight } from 'lucide-react';
 import { SEO } from '../components/SEO';
-
-const CALENDLY_URL = 'https://calendly.com/admin-gitavox/30min';
+import { CALENDLY_DISCOVERY_URL } from '../config/calendly';
 
 const features = [
   '1 AI voice or text agent, custom-built for your business',
@@ -72,7 +71,7 @@ export const PricingPage: React.FC = () => {
 
             {/* CTA */}
             <a
-              href={CALENDLY_URL}
+              href={CALENDLY_DISCOVERY_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 w-full px-6 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold rounded-2xl hover:from-blue-500 hover:to-purple-500 transition-all hover:scale-[1.02] active:scale-[0.98] text-base"

@@ -47,29 +47,29 @@ export const RoadmapPage: React.FC = () => {
                   Future Vision
                 </h2>
               </div>
-            <div className="space-y-6 text-slate-600 dark:text-slate-400">
-              <p className="text-lg">
-                Looking beyond Q1 2026, GitaVox is committed to pushing the boundaries of conversational AI. Our vision includes:
-              </p>
-              <ul className="space-y-4 ml-6">
-                <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-blue-600 mt-2" />
-                  <span><strong className="text-slate-900 dark:text-white">Multimodal AI:</strong> Integrating vision and text capabilities for richer interactions</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-purple-600 mt-2" />
-                  <span><strong className="text-slate-900 dark:text-white">Real-time Translation:</strong> Breaking language barriers with instant multilingual support</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-green-600 mt-2" />
-                  <span><strong className="text-slate-900 dark:text-white">Emotion AI:</strong> Understanding and responding to customer emotions</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-orange-600 mt-2" />
-                  <span><strong className="text-slate-900 dark:text-white">Enterprise Scale:</strong> Supporting millions of concurrent conversations</span>
-                </li>
-              </ul>
-            </div>
+              <div className="space-y-6 text-slate-600 dark:text-slate-400">
+                <p className="text-lg">
+                  Looking beyond Q1 2026, GitaVox is committed to pushing the boundaries of conversational AI. Our vision includes:
+                </p>
+                <ul className="space-y-4 ml-6">
+                  <li className="flex items-start gap-3">
+                    <div className="w-2 h-2 rounded-full bg-blue-600 mt-2" />
+                    <span><strong className="text-slate-900 dark:text-white">Multimodal AI:</strong> Integrating vision and text capabilities for richer interactions</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="w-2 h-2 rounded-full bg-purple-600 mt-2" />
+                    <span><strong className="text-slate-900 dark:text-white">Real-time Translation:</strong> Breaking language barriers with instant multilingual support</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="w-2 h-2 rounded-full bg-green-600 mt-2" />
+                    <span><strong className="text-slate-900 dark:text-white">Emotion AI:</strong> Understanding and responding to customer emotions</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="w-2 h-2 rounded-full bg-orange-600 mt-2" />
+                    <span><strong className="text-slate-900 dark:text-white">Enterprise Scale:</strong> Supporting millions of concurrent conversations</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

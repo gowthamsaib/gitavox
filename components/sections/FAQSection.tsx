@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
 
 const faqs = [
@@ -92,32 +93,15 @@ export const FAQSection: React.FC = () => {
         <div className="text-center mt-12">
           <p className="text-slate-600 dark:text-slate-400 mb-6">
             Have more questions?{' '}
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="text-blue-600 dark:text-blue-400 hover:underline font-semibold"
             >
               Schedule a discovery call
-            </a>
+            </Link>
           </p>
         </div>
       </div>
-
-      <style>{`
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-            transform: translateY(-10px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        .animate-fadeIn {
-          animation: fadeIn 0.3s ease-out;
-        }
-      `}</style>
     </section>
   );
 };

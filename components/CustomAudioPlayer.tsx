@@ -74,16 +74,14 @@ export const CustomAudioPlayer: React.FC<CustomAudioPlayerProps> = ({ src, autop
         await audio.play();
         setIsPlaying(true);
         hasAttemptedAutoplay.current = true;
-      } catch (error) {
-        // Autoplay was blocked by browser policy, silently fail
-        console.log('Autoplay was blocked by the browser');
+      } catch {
+        // Autoplay was blocked by browser policy — silently fail
         hasAttemptedAutoplay.current = true;
       }
     };
 
-    // Wait for the audio to be ready before attempting autoplay
+    // Wait for audio to be ready before attempting autoplay (readyState >= 2 = HAVE_CURRENT_DATA)
     if (audio.readyState >= 2) {
-      // HAVE_CURRENT_DATA or better
       attemptAutoplay();
     } else {
       audio.addEventListener('canplay', attemptAutoplay, { once: true });

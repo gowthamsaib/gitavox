@@ -3,6 +3,7 @@ import { SEO } from '../components/SEO';
 import { ProductsSection } from '../components/sections/ProductsSection';
 import { DemoSection } from '../components/sections/DemoSection';
 import { IntegrationsSection } from '../components/sections/IntegrationsSection';
+import { CALENDLY_DISCOVERY_URL } from '../config/calendly';
 
 export const ProductsPage: React.FC = () => {
   return (
@@ -33,7 +34,7 @@ export const ProductsPage: React.FC = () => {
             Schedule a discovery call to discuss which product fits your business needs.
           </p>
           <a
-            href="https://calendly.com/admin-gitavox/30min"
+            href={CALENDLY_DISCOVERY_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold rounded-2xl hover:from-blue-500 hover:to-purple-500 transition-all hover:scale-105 active:scale-95"

@@ -40,20 +40,6 @@ export const audioQnaSection = {
   audioFilename: 'qna-gitavox-demo.wav',
 } as const;
 
-export const servicesSection = {
-  title: 'End-to-End',
-  titleHighlight: 'AI Consultancy',
-  ctaTitle: 'Start Your Transformation',
-  ctaSubline: 'Work with our elite team of engineers and data scientists to build the future of your company.',
-  firstNamePlaceholder: 'First name',
-  lastNamePlaceholder: 'Last name',
-  emailPlaceholder: 'company@email.com',
-  notePlaceholder: 'Optional note (e.g. preferred time)',
-  ctaButton: 'Schedule Discovery Call',
-  ctaContinue: 'Continue to calendar',
-  thanksMessage: "Thanks! We've received your details and will reach out shortly to schedule your discovery call.",
-} as const;
-
 export const footer = {
   tagline:
     'GitaVox builds AI voice and text agents that work 24/7 — so your team can focus on what humans do best.',

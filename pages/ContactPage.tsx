@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Mail, Clock, Linkedin, CalendarPlus, CheckCircle, AlertCircle } from 'lucide-react';
 import { SEO } from '../components/SEO';
 import { CALENDLY_DISCOVERY_URL } from '../config/calendly';
+import { FORMSPREE_DISCOVERY_FORM_ID } from '../config/forms';
 
 const FORM_EMAIL = 'admin@gitavox.tech';
 
@@ -34,7 +35,7 @@ export const ContactPage: React.FC = () => {
     setErrorMsg('');
     try {
       // Using Formspree fallback — replace with your own endpoint or Formspree ID
-      const res = await fetch('https://formspree.io/f/mvzroakd', {
+      const res = await fetch(`https://formspree.io/f/${FORMSPREE_DISCOVERY_FORM_ID}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({ ...form, _subject: `GitaVox Contact: ${form.reason || 'General Enquiry'}` }),

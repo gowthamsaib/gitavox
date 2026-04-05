@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { ChevronRight, Phone, MessageSquare, Cpu, X, CalendarDays } from 'lucide-react';
 import { MAX_WIDTH_CONTAINER } from '../../config/app';
+import { CALENDLY_DISCOVERY_URL } from '../../config/calendly';
 import { products } from '../../data/products';
 import { productsSection } from '../../data/site';
-
-const CALENDLY_URL = 'https://calendly.com/admin-gitavox/30min';
 
 const productIcons: Record<string, React.ReactNode> = {
   'voice-agents': <Phone size={56} strokeWidth={1.5} />,
@@ -55,7 +54,7 @@ const BookingDialog: React.FC<BookingDialogProps> = ({ product, onClose }) => (
       </p>
 
       <a
-        href={CALENDLY_URL}
+        href={CALENDLY_DISCOVERY_URL}
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center justify-center gap-2 w-full px-6 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold rounded-2xl hover:from-blue-500 hover:to-purple-500 transition-all hover:scale-[1.02] active:scale-[0.98]"

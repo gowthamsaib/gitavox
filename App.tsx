@@ -14,12 +14,6 @@ import PricingPage from './pages/PricingPage';
 import PrivacyPage from './pages/PrivacyPage';
 import TermsPage from './pages/TermsPage';
 
-const ScrollToTop: React.FC = () => {
-  const { pathname } = window.location;
-  React.useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
-  return null;
-};
-
 const App: React.FC = () => {
   return (
     <HelmetProvider>

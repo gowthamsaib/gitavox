@@ -99,36 +99,6 @@ export const IntegrationsSection: React.FC = () => {
           </div>
         </div>
       </div>
-
-      <style>{`
-        @keyframes scroll-right {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-
-        @keyframes scroll-left {
-          0% {
-            transform: translateX(-50%);
-          }
-          100% {
-            transform: translateX(0);
-          }
-        }
-
-        .animate-scroll-right {
-          animation: scroll-right 30s linear infinite;
-          display: flex;
-        }
-
-        .animate-scroll-left {
-          animation: scroll-left 30s linear infinite;
-          display: flex;
-        }
-      `}</style>
     </section>
   );
 };

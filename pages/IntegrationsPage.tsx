@@ -72,21 +72,6 @@ export const IntegrationsPage: React.FC = () => {
           </div>
         </div>
 
-        <style>{`
-          @keyframes scroll-banner {
-            0% {
-              transform: translateX(0);
-            }
-            100% {
-              transform: translateX(-50%);
-            }
-          }
-
-          .animate-scroll-banner {
-            animation: scroll-banner 40s linear infinite;
-            display: flex;
-          }
-        `}</style>
       </section>
 
       {/* Integrations Grid with Sidebar */}
