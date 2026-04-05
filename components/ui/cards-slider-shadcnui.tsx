@@ -1,7 +1,7 @@
 import { Badge } from '@/components/ui/badge';
 import { Card } from '@/components/ui/card';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Check, Smartphone, Sparkles, User, X } from 'lucide-react';
+import { Check, Smartphone, Sparkles, User, X } from 'lucide-react';
 import { useState } from 'react';
 
 interface Feature {
@@ -267,8 +267,8 @@ const illustrations = [IVRIllustration, IVAIllustration, GitaVoxIllustration];
 export function CardsSlider() {
   const [flipped, setFlipped] = useState<Record<number, boolean>>({});
 
-  const toggle = (id: number) =>
-    setFlipped((prev) => ({ ...prev, [id]: !prev[id] }));
+  const hover = (id: number, val: boolean) =>
+    setFlipped((prev) => ({ ...prev, [id]: val }));
 
   return (
     <div className="w-full max-w-6xl mx-auto px-4">
@@ -278,13 +278,18 @@ export function CardsSlider() {
           const isFlipped = !!flipped[card.id];
 
           return (
-            <div key={card.id} className="flex flex-col" style={{ perspective: '1200px' }}>
+            <div
+              key={card.id}
+              className="flex flex-col"
+              style={{ perspective: '1200px' }}
+              onMouseEnter={() => hover(card.id, true)}
+              onMouseLeave={() => hover(card.id, false)}
+            >
               <motion.div
                 animate={{ rotateY: isFlipped ? 180 : 0 }}
-                transition={{ duration: 0.5, ease: 'easeInOut' }}
+                transition={{ duration: 0.55, ease: 'easeInOut' }}
                 style={{ transformStyle: 'preserve-3d', position: 'relative' }}
                 className="flex-1"
-                whileHover={isFlipped ? undefined : { y: -8, transition: { duration: 0.3 } }}
               >
                 {/* FRONT */}
                 <div style={{ backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden' }} className="h-full">
@@ -350,20 +355,7 @@ export function CardsSlider() {
                         ))}
                       </ul>
 
-                      {/* Learn More button */}
-                      <button
-                        onClick={() => toggle(card.id)}
-                        className={`mt-4 flex items-center gap-1.5 text-xs font-semibold transition-colors self-start ${
-                          card.highlighted
-                            ? 'text-blue-500 hover:text-blue-400'
-                            : 'text-slate-500 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400'
-                        }`}
-                      >
-                        Learn more
-                        <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
-                        </svg>
-                      </button>
+                      <p className={`mt-3 text-[10px] italic ${card.highlighted ? 'text-blue-400/60' : 'text-slate-400 dark:text-slate-600'}`}>Hover to learn more</p>
                     </div>
                   </Card>
                 </div>
@@ -429,14 +421,7 @@ export function CardsSlider() {
                         </div>
                       </div>
 
-                      {/* Back button */}
-                      <button
-                        onClick={() => toggle(card.id)}
-                        className="mt-4 flex items-center gap-1.5 text-xs font-semibold text-slate-500 dark:text-slate-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors self-start"
-                      >
-                        <ArrowLeft className="w-3.5 h-3.5" />
-                        Back
-                      </button>
+                      <p className="mt-3 text-[10px] italic text-slate-400 dark:text-slate-600">Move cursor away to go back</p>
                     </div>
                   </Card>
                 </div>
